@@ -1,0 +1,47 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-ueransim-to-video-client
+spec:
+  podSelector:
+    matchLabels:
+      app: video-client
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: ueransim-ue
+  policyTypes:
+  - Ingress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-video-client-to-video-server
+spec:
+  podSelector:
+    matchLabels:
+      app: video-server
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: video-client
+  policyTypes:
+  - Ingress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-video-client-to-portal-server
+spec:
+  podSelector:
+    matchLabels:
+      app: portal-server
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: video-client
+  policyTypes:
+  - Ingress

@@ -1,0 +1,36 @@
+# video-servers.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: video-server
+  namespace: open5gs
+spec:
+  serviceName: video-server
+  replicas: 12
+  selector:
+    matchLabels:
+      app: video-server
+  template:
+    metadata:
+      labels:
+        app: video-server
+      annotations:
+        k8s.v1.cni.cncf.io/networks: '[{"name": "n3network", "interface": "n3", "ips": ["10.10.3.10/24"]}]'
+    spec:
+      containers:
+      - name: video-server
+        image: tomcat:9.0-jdk17-corretto
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: /usr/local/tomcat/webapps/ROOT
+          name: video-blocks
+  volumeClaimTemplates:
+  - metadata:
+      name: video-blocks
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 10Gi
+

@@ -1,0 +1,53 @@
+# video-server-1-policy.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: video-server-1-policy
+  namespace: open5gs
+spec:
+  podSelector:
+    matchLabels:
+      app: video-server-1
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: upf1
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: upf1
+    ports:
+    - protocol: UDP
+      port: 2152  # GTP-U
+---
+# video-server-2-policy.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: video-server-2-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: video-server-2
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: upf2
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: upf2
+    ports:
+    - protocol: UDP
+      port: 2152  # GTP-U
+

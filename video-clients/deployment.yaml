@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: video-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: video-client
+  template:
+    metadata:
+      labels:
+        app: video-client
+    spec:
+      containers:
+      - name: video-client
+        image: nishthat12/ems-video-client:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: PORTAL_SERVER
+          value: "http://portal-server.open5gs.svc.cluster.local"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: video-client
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30500
+  selector:
+    app: video-client

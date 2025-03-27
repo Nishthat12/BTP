@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: video-server-SERVERID
+  namespace: open5gs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: video-server-SERVERID
+  template:
+    metadata:
+      labels:
+        app: video-server-SERVERID
+      annotations:
+        k8s.v1.cni.cncf.io/networks: video-server-UPFID-net
+    spec:
+      containers:
+      - name: tomcat
+        image: tomcat:9.0
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: video-data
+          mountPath: /usr/local/tomcat/webapps/video
+      volumes:
+      - name: video-data
+        hostPath:
+          path: /path/to/video/blocks/SERVERID
+          type: DirectoryOrCreate

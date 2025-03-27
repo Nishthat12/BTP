@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: open5gs
+
+resources:
+  - video-server-1
+  - video-server-2
+  # - ue3
