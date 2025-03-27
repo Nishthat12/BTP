@@ -1,0 +1,4 @@
+zfec==1.5.7.4
+numpy==1.24.3
+requests==2.31.0
+pymongo==4.5.0
