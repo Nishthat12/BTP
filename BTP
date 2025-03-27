@@ -1,0 +1,25 @@
+./bin/k8s-shell.sh upf1 open5gs
+
+./bin/k8s-log.sh amf open5gs
+
+ kubectl cp /tmp/foo <some-namespace>/<some-pod>:/tmp/bar
+ 
+ # Check one of the video servers
+kubectl exec -it $(kubectl get pods -n open5gs | grep video-server | head -n 1 | awk '{print $1}') -n open5gs -- ls -la /usr/local/tomcat/webapps/ROOT/
+
+kubectl get pods -n open5gs -o wide
+
+apt-get update
+apt install curl
+
+ curl --interface uesimtun0 http://10.244.0.176:8080/sample_video.mp4 --output output.mp4
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 61.3M  100 61.3M    0     0  12.7M      0  0:00:04  0:00:04 --:--:-- 12.7M
+
+kubectl exec -it video-server-84f9b8f49f-2jzcn -n open5gs -- /bin/bash
+
+kubectl cp sample_video.mp4 open5gs/video-server-84f9b8f49f-2jzcn:/usr/local/tomcat/webapps/ROOT/
+
+./distribute_blocks.py
+kubectl get pods -n open5gs --show-labels
