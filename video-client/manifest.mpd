@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" 
+     minBufferTime="PT1.5S"
+     type="dynamic"
+     profiles="urn:mpeg:dash:profile:isoff-on-demand:2011">
+     
+  <Period duration="PT0H10M0S">
+    <AdaptationSet segmentAlignment="true">
+      <Representation id="0" 
+        mimeType="video/mp4" 
+        codecs="avc1.64001e" 
+        bandwidth="1000000">
+        <SegmentTemplate media="/video/$Number$.mp4"
+                         startNumber="1"
+                         timescale="1"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
+

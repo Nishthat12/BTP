@@ -46,6 +46,86 @@ subscriber_1:
           priority_level: 8
           pre_emption_capability: 1
           pre_emption_vulnerability: 1
+  - sst: 3
+    sd: '000003'
+    default_indicator: true
+    session:
+    - name: internet
+      type: 1
+      pcc_rule: []
+      ambr:
+        uplink:
+          value: 1
+          unit: 3
+        downlink:
+          value: 1
+          unit: 3
+      qos:
+        index: 9
+        arp:
+          priority_level: 8
+          pre_emption_capability: 1
+          pre_emption_vulnerability: 1
+  - sst: 4
+    sd: '000004'
+    default_indicator: true
+    session:
+    - name: internet
+      type: 1
+      pcc_rule: []
+      ambr:
+        uplink:
+          value: 1
+          unit: 3
+        downlink:
+          value: 1
+          unit: 3
+      qos:
+        index: 7
+        arp:
+          priority_level: 8
+          pre_emption_capability: 1
+          pre_emption_vulnerability: 1
+  - sst: 5
+    sd: '000005'
+    default_indicator: true
+    session:
+    - name: internet
+      type: 1
+      pcc_rule: []
+      ambr:
+        uplink:
+          value: 1
+          unit: 3
+        downlink:
+          value: 1
+          unit: 3
+      qos:
+        index: 9
+        arp:
+          priority_level: 8
+          pre_emption_capability: 1
+          pre_emption_vulnerability: 1
+  - sst: 6
+    sd: '000006'
+    default_indicator: true
+    session:
+    - name: internet
+      type: 1
+      pcc_rule: []
+      ambr:
+        uplink:
+          value: 1
+          unit: 3
+        downlink:
+          value: 1
+          unit: 3
+      qos:
+        index: 7
+        arp:
+          priority_level: 8
+          pre_emption_capability: 1
+          pre_emption_vulnerability: 1                    
   ambr:
     uplink:
       value: 1

@@ -11,6 +11,10 @@ spec:
     metadata:
       labels:
         app: video-server-2
+      annotations:
+        k8s.v1.cni.cncf.io/networks: '[
+          { "name": "n5network"}
+          ]'
     spec:
       containers:
       - name: video-server-2

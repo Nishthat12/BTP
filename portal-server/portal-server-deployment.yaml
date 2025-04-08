@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-server
+  labels:
+    app: portal-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portal-server
+  template:
+    metadata:
+      labels:
+        app: portal-server
+    spec:
+      containers:
+      - name: portal-server
+        image: portalserver:latest
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - name: storage
+          mountPath: /app/storage
+      volumes:
+      - name: storage
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portal-server
+spec:
+  selector:
+    app: portal-server
+  ports:
+  - port: 5000
+    targetPort: 5000
+    nodePort: 30500
+  type: NodePort

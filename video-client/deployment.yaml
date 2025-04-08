@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: video-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: video-client
+  template:
+    metadata:
+      labels:
+        app: video-client
+    spec:
+      containers:
+      - name: proxy
+        image: python:3.9
+        command: ["flask", "run", "--host=0.0.0.0"]
+        env:
+          FLASK_APP: "/app/decode-proxy.py"
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - mountPath: /app
+          name: app-code
+      - name: web
+        image: nginx
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: dash-js
+      volumes:
+      - name: app-code
+        configMap:
+          name: proxy-code
+      - name: dash-js
+        configMap:
+          name: dash-js-files
+

@@ -1,0 +1,43 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: video-server-1-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: video-server-1
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: open5gs-upf1
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: open5gs-upf1
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: video-server-2-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: video-server-2
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: open5gs-upf2
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: open5gs-upf2

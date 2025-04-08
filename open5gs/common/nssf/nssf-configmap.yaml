@@ -31,3 +31,19 @@ data:
               s_nssai:
                 sst: 2
                 sd: 000002
+            - uri: http://nrf-nnrf:80
+              s_nssai:
+                sst: 3
+                sd: 000003
+            - uri: http://nrf-nnrf:80
+              s_nssai:
+                sst: 4
+                sd: 000004
+            - uri: http://nrf-nnrf:80
+              s_nssai:
+                sst: 5
+                sd: 000005
+            - uri: http://nrf-nnrf:80
+              s_nssai:
+                sst: 6
+                sd: 000006                                

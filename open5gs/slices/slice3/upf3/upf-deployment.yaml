@@ -21,8 +21,8 @@ spec:
         name: upf3
       annotations:
         k8s.v1.cni.cncf.io/networks: '[
-          { "name": "n3network", "interface": "n3", "ips": [ "10.10.3.2/24" ] },
-          { "name": "n4network", "interface": "n4", "ips": [ "10.10.4.2/24" ] }
+          { "name": "n3network", "interface": "n3", "ips": [ "10.10.3.3/24" ] },
+          { "name": "n4network", "interface": "n4", "ips": [ "10.10.4.3/24" ] }
           ]'
     spec:
       # nodeSelector:
@@ -60,7 +60,7 @@ spec:
       volumes:
       - name: upf-volume
         configMap:
-          name: upf2-configmap
+          name: upf3-configmap
           items:
           - key: upfcfg.yaml
             path: upfcfg.yaml

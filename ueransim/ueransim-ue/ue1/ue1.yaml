@@ -48,6 +48,26 @@ sessions:
     slice:
       sst: 2
       sd: 000002
+  - type: 'IPv4'
+    apn: 'internet'
+    slice:
+      sst: 3
+      sd: 000003
+  - type: 'IPv4'
+    apn: 'internet'
+    slice:
+      sst: 4
+      sd: 000004
+  - type: 'IPv4'
+    apn: 'internet'
+    slice:
+      sst: 5
+      sd: 000005
+  - type: 'IPv4'
+    apn: 'internet'
+    slice:
+      sst: 6
+      sd: 000006           
 
 # Configured NSSAI for this UE by HPLMN
 configured-nssai:
@@ -55,6 +75,14 @@ configured-nssai:
     sd: 000001
   - sst: 2
     sd: 000002
+  - sst: 3
+    sd: 000003
+  - sst: 4
+    sd: 000004
+  - sst: 5
+    sd: 000005
+  - sst: 6
+    sd: 000006      
 
 # Default Configured NSSAI for this UE
 default-nssai:
