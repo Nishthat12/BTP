@@ -1,5 +1,5 @@
 {
-  "video-server-1-8695bf7c55-x9n67": [
+  "video-server-84f9b8f49f-2jzcn": [
     "chunk000_block00.bin",
     "chunk001_block00.bin",
     "chunk002_block00.bin",
@@ -23,7 +23,7 @@
     "chunk020_block00.bin",
     "chunk021_block00.bin"
   ],
-  "video-server-2-bcbcf7fc-q8l4r": [
+  "video-server-84f9b8f49f-8vtz8": [
     "chunk000_block01.bin",
     "chunk001_block01.bin",
     "chunk002_block01.bin",
@@ -47,7 +47,7 @@
     "chunk020_block01.bin",
     "chunk021_block01.bin"
   ],
-  "video-server-3-6898dd6869-ghnx2": [
+  "video-server-84f9b8f49f-cmstv": [
     "chunk000_block02.bin",
     "chunk001_block02.bin",
     "chunk002_block02.bin",
@@ -71,7 +71,7 @@
     "chunk020_block02.bin",
     "chunk021_block02.bin"
   ],
-  "video-server-4-86d9785bd5-dsg92": [
+  "video-server-84f9b8f49f-cq8s4": [
     "chunk000_block03.bin",
     "chunk001_block03.bin",
     "chunk002_block03.bin",
@@ -95,7 +95,7 @@
     "chunk020_block03.bin",
     "chunk021_block03.bin"
   ],
-  "video-server-5-6788fc775f-j4b6c": [
+  "video-server-84f9b8f49f-nj8jn": [
     "chunk000_block04.bin",
     "chunk001_block04.bin",
     "chunk002_block04.bin",
@@ -119,7 +119,7 @@
     "chunk020_block04.bin",
     "chunk021_block04.bin"
   ],
-  "video-server-6-5d557496bf-cqbm7": [
+  "video-server-84f9b8f49f-qb4zl": [
     "chunk000_block05.bin",
     "chunk001_block05.bin",
     "chunk002_block05.bin",
@@ -142,5 +142,149 @@
     "chunk019_block05.bin",
     "chunk020_block05.bin",
     "chunk021_block05.bin"
+  ],
+  "video-server-84f9b8f49f-qgwnw": [
+    "chunk000_block06.bin",
+    "chunk001_block06.bin",
+    "chunk002_block06.bin",
+    "chunk003_block06.bin",
+    "chunk004_block06.bin",
+    "chunk005_block06.bin",
+    "chunk006_block06.bin",
+    "chunk007_block06.bin",
+    "chunk008_block06.bin",
+    "chunk009_block06.bin",
+    "chunk010_block06.bin",
+    "chunk011_block06.bin",
+    "chunk012_block06.bin",
+    "chunk013_block06.bin",
+    "chunk014_block06.bin",
+    "chunk015_block06.bin",
+    "chunk016_block06.bin",
+    "chunk017_block06.bin",
+    "chunk018_block06.bin",
+    "chunk019_block06.bin",
+    "chunk020_block06.bin",
+    "chunk021_block06.bin"
+  ],
+  "video-server-84f9b8f49f-sf4pj": [
+    "chunk000_block07.bin",
+    "chunk001_block07.bin",
+    "chunk002_block07.bin",
+    "chunk003_block07.bin",
+    "chunk004_block07.bin",
+    "chunk005_block07.bin",
+    "chunk006_block07.bin",
+    "chunk007_block07.bin",
+    "chunk008_block07.bin",
+    "chunk009_block07.bin",
+    "chunk010_block07.bin",
+    "chunk011_block07.bin",
+    "chunk012_block07.bin",
+    "chunk013_block07.bin",
+    "chunk014_block07.bin",
+    "chunk015_block07.bin",
+    "chunk016_block07.bin",
+    "chunk017_block07.bin",
+    "chunk018_block07.bin",
+    "chunk019_block07.bin",
+    "chunk020_block07.bin",
+    "chunk021_block07.bin"
+  ],
+  "video-server-84f9b8f49f-tqgq7": [
+    "chunk000_block08.bin",
+    "chunk001_block08.bin",
+    "chunk002_block08.bin",
+    "chunk003_block08.bin",
+    "chunk004_block08.bin",
+    "chunk005_block08.bin",
+    "chunk006_block08.bin",
+    "chunk007_block08.bin",
+    "chunk008_block08.bin",
+    "chunk009_block08.bin",
+    "chunk010_block08.bin",
+    "chunk011_block08.bin",
+    "chunk012_block08.bin",
+    "chunk013_block08.bin",
+    "chunk014_block08.bin",
+    "chunk015_block08.bin",
+    "chunk016_block08.bin",
+    "chunk017_block08.bin",
+    "chunk018_block08.bin",
+    "chunk019_block08.bin",
+    "chunk020_block08.bin",
+    "chunk021_block08.bin"
+  ],
+  "video-server-84f9b8f49f-wkh55": [
+    "chunk000_block09.bin",
+    "chunk001_block09.bin",
+    "chunk002_block09.bin",
+    "chunk003_block09.bin",
+    "chunk004_block09.bin",
+    "chunk005_block09.bin",
+    "chunk006_block09.bin",
+    "chunk007_block09.bin",
+    "chunk008_block09.bin",
+    "chunk009_block09.bin",
+    "chunk010_block09.bin",
+    "chunk011_block09.bin",
+    "chunk012_block09.bin",
+    "chunk013_block09.bin",
+    "chunk014_block09.bin",
+    "chunk015_block09.bin",
+    "chunk016_block09.bin",
+    "chunk017_block09.bin",
+    "chunk018_block09.bin",
+    "chunk019_block09.bin",
+    "chunk020_block09.bin",
+    "chunk021_block09.bin"
+  ],
+  "video-server-84f9b8f49f-xqw4h": [
+    "chunk000_block10.bin",
+    "chunk001_block10.bin",
+    "chunk002_block10.bin",
+    "chunk003_block10.bin",
+    "chunk004_block10.bin",
+    "chunk005_block10.bin",
+    "chunk006_block10.bin",
+    "chunk007_block10.bin",
+    "chunk008_block10.bin",
+    "chunk009_block10.bin",
+    "chunk010_block10.bin",
+    "chunk011_block10.bin",
+    "chunk012_block10.bin",
+    "chunk013_block10.bin",
+    "chunk014_block10.bin",
+    "chunk015_block10.bin",
+    "chunk016_block10.bin",
+    "chunk017_block10.bin",
+    "chunk018_block10.bin",
+    "chunk019_block10.bin",
+    "chunk020_block10.bin",
+    "chunk021_block10.bin"
+  ],
+  "video-server-84f9b8f49f-zfqxr": [
+    "chunk000_block11.bin",
+    "chunk001_block11.bin",
+    "chunk002_block11.bin",
+    "chunk003_block11.bin",
+    "chunk004_block11.bin",
+    "chunk005_block11.bin",
+    "chunk006_block11.bin",
+    "chunk007_block11.bin",
+    "chunk008_block11.bin",
+    "chunk009_block11.bin",
+    "chunk010_block11.bin",
+    "chunk011_block11.bin",
+    "chunk012_block11.bin",
+    "chunk013_block11.bin",
+    "chunk014_block11.bin",
+    "chunk015_block11.bin",
+    "chunk016_block11.bin",
+    "chunk017_block11.bin",
+    "chunk018_block11.bin",
+    "chunk019_block11.bin",
+    "chunk020_block11.bin",
+    "chunk021_block11.bin"
   ]
 }
