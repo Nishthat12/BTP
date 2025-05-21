@@ -13,7 +13,6 @@ spec:
         app: video-server-6
       annotations:
         k8s.v1.cni.cncf.io/networks: '[
-          { "name": "n5network"}
           ]'
     spec:
       containers:
